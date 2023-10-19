@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+	--light: #F9F9F9;
+	--blue: #134991;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #e52025;
+	--yellow: #ffd450;
+	--light-yellow: #FFF2C6;
+	/* --orange: #FD7238; */
+	--light-red: #FFE0D3;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background: var(--grey) !important;
+	overflow-x: hidden;
+	min-height: 100vh;
+
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.head-title {
+	display: flex;
+	align-items: center;
+	margin: 30px 0 0 200px;
+}
+
+.head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	color: var(--dark);
+}
+
+.container{
+	position: relative;
+	max-width: 900;
+	background-color: var(--light);
+	border-radius: 20px;
+	margin-top: 18px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header{
+	position: relative;
+	font-size: 35px;
+	font-weight: 600;
+	color: var(--dark);
+}
+
+.container form{
+	position: relative;
+	min-height: 450px;
+    margin-top: 10px;
+
+}
+
+form .card {
+    background-color: transparent!important;
+    border: none;
+}
+
+.card .card-body input{
+    outline: none;
+	font-size: 14px;
+	/* border: 0.6px solid #aaa; */
+	border: none;
+	border-radius: 6px;
+	padding: 0 15px;
+	height: 42px;
+	margin: 8px 0;
+
+
+}
+
+.card .card-body input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.addIcon #btn_addQuestion{
+    background-color: var(--blue);
+    color: var(--light);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    margin-top:30px;
+}
+.btnDown{
+    margin-top: 30px;
+}
+.btnDown button {
+    color: var(--light)!important;
+    background-color: var(--blue)!important;
+    border-color: transparent;
+    transition: all 0.3s linear;
+	cursor: pointer;
+    border-radius: 6px;
+
+  }
+
+  .btnDown button:hover {
+    color: var(--blue)!important;
+    background-color: var(--light)!important;
+    border: 0.6px solid #aaa!important;
+  }
+
+  #btn_deleteQuestion{
+    color: var(--red)!important;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.container .card-body select{
+	outline: none;
+	font-size: 14px;
+	border: none;
+	border-radius: 6px;
+	height: 42px;
+	margin: 8px 10px 12px 15px ;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#btn_add_opt{
+
+	font-family: var(--poppins);
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+#del_opt{
+	margin-left: 10px;
+}
